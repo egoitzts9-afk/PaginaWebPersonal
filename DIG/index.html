@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="Portafolio de Egoitz Toribio, programador de videojuegos con Unity y C#."
+    />
+
+    <title>Egoitz Toribio | Unity y C#</title>
+
+    <link rel="stylesheet" href="visual.css" />
+  </head>
+
+  <body>
+    <main id="inicio">
+      <!-- ENCABEZADO Y PRESENTACIÓN -->
+      <section class="contenedor seccion-inicio">
+        <header class="cabecera">
+          <a
+            href="#inicio"
+            class="marca"
+            aria-label="Ir al inicio"
+          >
+            <!-- Logo integrado directamente en el HTML -->
+            <img
+              class="marca__logo"
+              src="imagenes/Logo.png"
+              alt="Logo de Egoitz Toribio"
+            />
+
+            <span class="marca__nombre">Egoitz Toribio</span>
+
+            <span class="marca__especialidad">
+              / Unity · C#
+            </span>
+          </a>
+
+          <button
+            class="boton-menu"
+            type="button"
+            aria-label="Abrir menú"
+            aria-controls="navegacion"
+            aria-expanded="false"
+          >
+            <span></span>
+          </button>
+
+          <nav
+            id="navegacion"
+            class="navegacion"
+            aria-label="Navegación principal"
+          >
+            <a class="navegacion__enlace activo" href="#inicio">
+              Inicio
+            </a>
+
+            <a class="navegacion__enlace" href="#proyectos">
+              Proyectos
+            </a>
+
+            <a class="navegacion__enlace" href="#perfil">
+              Perfil técnico
+            </a>
+
+            <a class="enlace-flecha" href="#contacto">
+              Hablemos
+              <span aria-hidden="true">↗</span>
+            </a>
+          </nav>
+        </header>
+
+        <div class="hero">
+          <div class="hero__contenido">
+            <div class="etiqueta-seccion">
+              <span>01</span>
+              <span>PROGRAMACIÓN DE VIDEOJUEGOS</span>
+            </div>
+
+            <h1>
+              Ideas que
+              <br />
+              se convierten
+              <br />
+              en juego.
+            </h1>
+
+            <p class="hero__descripcion">
+              Soy Egoitz, programador de Unity y C#. Transformo
+              mecánicas en experiencias que se sienten bien al jugar y
+              se sostienen con buen código.
+            </p>
+
+            <div class="hero__acciones">
+              <a class="boton-principal" href="#proyectos">
+                Ver proyectos
+                <span aria-hidden="true">→</span>
+              </a>
+
+              <span class="disponibilidad">
+                <span class="punto"></span>
+                Abierto a colaborar
+              </span>
+            </div>
+          </div>
+
+          <a
+            href="#proyecto-destacado"
+            class="hero__imagen"
+            aria-label="Ver el proyecto Sueño ZZZ"
+          >
+            <img
+              src="imagenes/sueno-zzz-gameplay.png"
+              alt="Captura real de gameplay de Sueño ZZZ"
+            />
+
+            <span class="distintivo-imagen">
+              CAPTURA REAL
+            </span>
+
+            <div class="hero__sombra" aria-hidden="true"></div>
+
+            <div class="hero__proyecto">
+              <div>
+                <h2>Survival Shooter</h2>
+                <p>Supervivencia · Shooter</p>
+              </div>
+
+              <span class="flecha-grande" aria-hidden="true">↘</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="especialidades">
+          <span class="especialidades__titulo">
+            DEL PROTOTIPO AL JUEGO
+          </span>
+
+          <span class="especialidad">Movimiento y combate</span>
+          <span class="especialidad">IA y navegación</span>
+          <span class="especialidad">Enemigos y spawners</span>
+          <span class="especialidad">Vida y puntuación</span>
+        </div>
+      </section>
+
+      <!-- PROYECTOS -->
+      <section id="proyectos" class="contenedor proyectos">
+        <div class="etiqueta-seccion">
+          <span>02</span>
+          <span>PROYECTOS SELECCIONADOS</span>
+        </div>
+
+        <div class="encabezado-seccion">
+          <h2>
+            El código detrás
+            <br />
+            de la experiencia.
+          </h2>
+
+          <p>
+            Prototipos creados en Unity para explorar movimiento,
+            combate, navegación e inteligencia de enemigos.
+          </p>
+        </div>
+
+        <!-- PROYECTO PRINCIPAL -->
+        <article
+          id="proyecto-destacado"
+          class="proyecto-destacado"
+        >
+          <div class="imagen-proyecto">
+            <img
+              src="imagenes/sueno-zzz-gameplay.png"
+              alt="Captura real de gameplay de Sueño ZZZ"
+            />
+            <span class="insignia-destacada">
+              CAPTURA REAL
+            </span>
+          </div>
+
+          <div class="proyecto-destacado__contenido">
+            <div class="datos-proyecto">
+              <span>SUPERVIVENCIA · SHOOTER</span>
+              <span>UNITY · C#</span>
+            </div>
+
+            <h3>Survival Shooter</h3>
+
+            <p class="descripcion-proyecto">
+              Un prototipo de supervivencia en el que controlas al
+              personaje con el teclado, apuntas con el ratón y aparecen
+              enemigos durante la partida.
+            </p>
+
+            <div class="aportacion">
+              <p class="subtitulo">MI APORTACIÓN</p>
+
+              <p class="aportacion__elemento">
+                <span>↳</span>
+                Movimiento del jugador con Rigidbody y apuntado hacia
+                el suelo con raycast.
+              </p>
+
+              <p class="aportacion__elemento">
+                <span>↳</span>
+                Aparición periódica de distintos tipos de enemigos.
+              </p>
+
+              <p class="aportacion__elemento">
+                <span>↳</span>
+                Gestión de vida, derrota y reinicio de la escena.
+              </p>
+            </div>
+
+            <div class="tecnologias">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Rigidbody</span>
+            </div>
+
+            <a class="enlace-flecha" href="#contacto">
+              Explorar el proyecto
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- PROYECTOS SECUNDARIOS -->
+        <div class="rejilla-proyectos">
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-proyecto--tarjeta">
+              <img
+                src="imagenes/tanques-gameplay.png"
+                alt="Captura real de gameplay de Tanques por rondas"
+              />
+              <span class="insignia-prototipo">
+                CAPTURA REAL
+              </span>
+            </div>
+
+            <div class="tarjeta-proyecto__contenido">
+              <div class="datos-proyecto">
+                <span>COMBATE LOCAL</span>
+                <span>UNITY · C#</span>
+              </div>
+
+              <div class="titulo-tarjeta">
+                <h3>Tanques por rondas</h3>
+                <span aria-hidden="true">↘</span>
+              </div>
+
+              <p class="descripcion-proyecto">
+                Dos jugadores controlan sus tanques en una arena. Las
+                rondas, la puntuación y la cámara siguen el combate.
+              </p>
+
+              <div>
+                <p class="subtitulo">MI APORTACIÓN</p>
+
+                <p class="texto-secundario">
+                  Movimiento de tanques, disparos con fuerza cargable y
+                  seguimiento con zoom según la distancia.
+                </p>
+              </div>
+
+              <div class="tecnologias">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>Rigidbody</span>
+                <span>UI</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta-proyecto">
+            <div class="imagen-proyecto imagen-proyecto--tarjeta">
+              <img
+                src="imagenes/navmesh-gameplay.png"
+                alt="Captura real de gameplay de Pruebas de NavMesh"
+              />
+              <span class="insignia-prototipo">
+                CAPTURA REAL
+              </span>
+            </div>
+
+            <div class="tarjeta-proyecto__contenido">
+              <div class="datos-proyecto">
+                <span>IA Y NAVEGACIÓN</span>
+                <span>UNITY · C#</span>
+              </div>
+
+              <div class="titulo-tarjeta">
+                <h3>Pruebas de NavMesh</h3>
+                <span aria-hidden="true">↘</span>
+              </div>
+
+              <p class="descripcion-proyecto">
+                Un prototipo para mover un agente hasta el punto del
+                suelo seleccionado y probar recorridos de enemigos por
+                waypoints.
+              </p>
+
+              <div>
+                <p class="subtitulo">MI APORTACIÓN</p>
+
+                <p class="texto-secundario">
+                  Movimiento del jugador con NavMeshAgent y patrullaje
+                  de enemigos entre varios puntos.
+                </p>
+              </div>
+
+              <div class="tecnologias">
+                <span>Unity</span>
+                <span>C#</span>
+                <span>NavMesh</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PERFIL Y CONTACTO -->
+      <section id="perfil" class="contenedor perfil">
+        <div class="etiqueta-seccion">
+          <span>03</span>
+          <span>PERFIL TÉCNICO Y CONTACTO</span>
+        </div>
+
+        <div class="perfil__rejilla">
+          <div class="perfil__contenido">
+            <h2>
+              Buen juego.
+              <br />
+              Buena base técnica.
+            </h2>
+
+            <p class="perfil__descripcion">
+              He creado prototipos 2D y 3D con Unity y C#: desde
+              controles y combate hasta navegación, enemigos y
+              puntuación. Me interesa cómo cada sistema contribuye a
+              que el juego se sienta claro y divertido.
+            </p>
+
+            <div class="habilidades">
+              <article class="habilidad">
+                <div class="habilidad__titulo">
+                  <h3>Sistemas de juego</h3>
+                  <span aria-hidden="true">+</span>
+                </div>
+
+                <p>
+                  Movimiento · Combate · Vida · Puntuación
+                </p>
+              </article>
+
+              <article class="habilidad">
+                <div class="habilidad__titulo">
+                  <h3>Desarrollo en Unity</h3>
+                  <span aria-hidden="true">+</span>
+                </div>
+
+                <p>
+                  Unity · C# · Rigidbody 2D y 3D
+                </p>
+              </article>
+
+              <article class="habilidad">
+                <div class="habilidad__titulo">
+                  <h3>IA y navegación</h3>
+                  <span aria-hidden="true">+</span>
+                </div>
+
+                <p>
+                  NavMesh · Waypoints · Generación de enemigos
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <aside id="contacto" class="contacto">
+            <p class="contacto__estado">
+              <span class="punto"></span>
+              DISPONIBLE PARA NUEVOS RETOS
+            </p>
+
+            <h2>
+              ¿Hacemos que
+              <br />
+              tu idea se juegue?
+            </h2>
+
+            <p class="contacto__descripcion">
+              Si buscas apoyo en programación para Unity o quieres
+              compartir un proyecto, cuéntame qué tienes en mente.
+            </p>
+
+            <div class="correo">
+              <p class="subtitulo">ESCRÍBEME</p>
+
+              <!-- Cambia este correo por el tuyo -->
+              <a href="mailto:egoitzts9@gmail.com">
+                egoitzts9@gmail.com
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="separador"></div>
+
+            <div class="contacto__enlaces">
+              <a
+                class="enlace-flecha"
+                href="EgoitzToribio-CV-English.pdf"
+                download="EgoitzToribio-CV-English.pdf"
+              >
+                Descargar CV
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <p class="contacto__ubicacion">
+              Barakaldo, , España · Colaboración en remoto
+            </p>
+          </aside>
+        </div>
+
+        <footer class="pie">
+          <p class="pie__copyright">
+            Egoitz Toribio © <span id="anio"></span>
+          </p>
+
+
+          <a class="volver-arriba" href="#inicio">
+            Volver arriba
+            <span aria-hidden="true">↑</span>
+          </a>
+        </footer>
+      </section>
+    </main>
+
+    <script src="funciones.js"></script>
+  </body>
+</html>
